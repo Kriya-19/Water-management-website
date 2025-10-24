@@ -1,12 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 💧 Smart Water Data Visualization Dashboard
 
-## Available Scripts
+An interactive **React-based web application** that visualizes and analyzes water usage, leakage, and quality metrics collected from IoT-based hardware sensors.  
+The system transforms raw data into clear, actionable visuals and includes predictive analytics for water usage forecasting.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
+
+- **📊 Water Usage Analytics:** Visualize daily, weekly, and monthly consumption patterns through responsive charts.  
+- **💦 Leakage Detection Insights:** Detect anomalies in flow and pressure readings to identify potential leaks.  
+- **🔮 Usage Prediction:** Display predicted future water consumption based on historical data trends.  
+- **🧪 Quality Monitoring:** Show sensor readings like pH, turbidity, temperature, and dissolved oxygen.  
+- **🖥️ Interactive Dashboard:** Responsive UI built with React and charting libraries for real-time analysis.
+
+---
+
+## 🧠 Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | React.js, HTML5, CSS3, JavaScript |
+| **Visualization** | Chart.js / Recharts / D3.js |
+| **State Management** | React Hooks / Context API |
+| **Data Handling** | CSV / API data from IoT team’s model |
+| **Version Control** | Git, GitHub |
+
+---
+
+## 🧩 Data Flow
+
+1. **IoT Sensors** capture metrics like flow rate, water level, pH, turbidity, temperature, and leakage indicators.  
+2. **Data Feed** (CSV or REST API) provides structured readings to the React app.  
+3. **Frontend Dashboard** visualizes real-time and historical trends with charts and gauges.  
+4. **Prediction Component** displays forecasted water usage using precomputed ML results or integrated API.
+
+---
+
+## 📊 Dashboard Sections
+
+- **Water Usage:** Consumption trends, peak hours, and efficiency metrics  
+- **Leakage Detection:** Highlighted anomaly visualization  
+- **Water Quality:** pH, turbidity, temperature monitoring graphs  
+- **Predictions:** Graphs comparing actual vs predicted usage  
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/water-dashboard.git
+cd water-dashboard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -28,43 +79,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
